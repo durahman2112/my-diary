@@ -28,9 +28,22 @@
                   </v-icon>
                 </v-avatar>
               </v-col>
-              <v-col cols="7"><h4 class="pa-2">{{ diary.title }}</h4></v-col>
+              <v-col cols="5"><h4 class="pa-2">{{ diary.title }}</h4></v-col>
               <v-col cols="3">
                 <h4 class="pa-2 text-right" :class="diary.color+'--text'" :color="diary.color">{{ diary.count }}</h4>
+              </v-col>
+              <v-col cols="2">
+                <v-btn
+                  fab
+                  dark
+                  outlined
+                  small
+                  :color="diary.color"
+                >
+                  <v-icon dark>
+                    mdi-arrow-right
+                  </v-icon>
+                </v-btn>
               </v-col>
                 
                 
@@ -56,7 +69,7 @@ export default {
           color: "primary"
         },
         {
-          title: "Happiness Day",
+          title: "Happy Day",
           count: 200,
           icon: "mdi-emoticon-lol",
           color: "warning"
