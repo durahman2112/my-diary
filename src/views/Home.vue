@@ -3,7 +3,7 @@
     <v-container>
       <v-app-bar app flat>
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-        <v-toolbar-title>My Diary and Journal</v-toolbar-title>
+        <v-toolbar-title>My Diary and Journal | {{ title }}</v-toolbar-title>
         <v-row>
           <v-col />
           <v-col class="d-flex justify-end mt-5" cols="12" sm="4 mt-2">
@@ -38,6 +38,7 @@ import SideNav from "../components/SideNav.vue";
 export default {
   name: "Home",
   data: () => ({
+    title: "Dashboard",
     drawer: true,
   }),
 
@@ -46,5 +47,14 @@ export default {
     SideNav,
     FooterMain,
   },
+  computed: {
+    currentRouteName() {
+      console.log(this.$route.name);
+      return (this.title = this.$route.name);
+    },
+  },
+  // watch() {
+  //   currentRouteName(val), title(val);
+  // },
 };
 </script>

@@ -11,6 +11,7 @@ import AboutUs from "../views/AboutUs.vue";
 import Login from "../views/Login.vue";
 import NewDiary from "../views/NewDiary.vue";
 import PageNotFound from "../views/PageNotFound.vue";
+import DiaryDetail from "../views/DiaryDetail.vue";
 
 Vue.use(VueRouter);
 
@@ -58,6 +59,12 @@ const routes = [
         path: "/new-diary",
         name: "NewDiary",
         component: NewDiary,
+      },
+      {
+        path: "/diary/:id",
+        name: "DiaryDetail",
+        component: DiaryDetail,
+        props: true,
       },
     ],
   },

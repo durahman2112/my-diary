@@ -36,7 +36,11 @@ export default {
           date: "25-Nov-2020",
           place: "Tangerang Selatan",
           emotion: "Happy",
-          img: "https://picsum.photos/200/300",
+          img: `https://picsum.photos/500/300?image=${Math.floor(
+            Math.random() * 100
+          ) *
+            5 +
+            10}`,
         },
         {
           id: "abc2",
@@ -44,7 +48,11 @@ export default {
           date: "25-Nov-2020",
           place: "Tangerang Selatan",
           emotion: "Happy",
-          img: "https://picsum.photos/200/300",
+          img: `https://picsum.photos/500/300?image=${Math.floor(
+            Math.random() * 100
+          ) *
+            5 +
+            10}`,
         },
         {
           id: "abc3",
@@ -52,7 +60,11 @@ export default {
           date: "25-Nov-2020",
           place: "Tangerang Selatan",
           emotion: "Happy",
-          img: "https://picsum.photos/200/300",
+          img: `https://picsum.photos/500/300?image=${Math.floor(
+            Math.random() * 100
+          ) *
+            5 +
+            10}`,
         },
         {
           id: "abc4",
@@ -60,7 +72,11 @@ export default {
           date: "25-Nov-2020",
           place: "Tangerang Selatan",
           Emotions: "Happy",
-          img: "https://picsum.photos/200/300",
+          img: `https://picsum.photos/500/300?image=${Math.floor(
+            Math.random() * 100
+          ) *
+            5 +
+            10}`,
         },
       ],
     };
