@@ -1,4 +1,4 @@
-# lat-vuetify
+# Durahman Diary app
 
 ## Project setup
 ```
